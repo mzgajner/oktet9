@@ -1,2 +1,4 @@
-# oktet9
-Oktet 9 website
+Oktet 9
+====
+
+Website for Oktet 9.
