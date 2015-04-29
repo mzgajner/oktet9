@@ -8,17 +8,63 @@ body
     margin: 0
 
 main
-    display: flex
-    align-items: center
-    justify-content: center
-    height: 100%
-    padding: 0 20px
+    padding: 30px
 
 img
     width: 100%
 
 .container
+    margin: 0 auto
     width: 600px
+    max-width: 100%
+
+    hr
+        margin: 34px 0 30px 0
 
 a
     color: inherit
+
+hr
+    border: none
+    border-top: 1px solid #CEDDE5
+    height: 1px
+    margin: 20px 0
+    padding: 0
+
+h2
+    font-weight: 300
+    font-size: 40px
+    line-height: 1em
+    margin: 30px 0
+    text-transform: uppercase
+    span
+        opacity: 0.25
+
+.menu
+    &-holder
+        display: flex
+        list-style: none
+        overflow: hidden
+        padding: 0
+        margin: 20px 0
+        justify-content: space-between
+    &-item
+        font-size: 30px
+        font-weight: 300
+        text-transform: uppercase
+        a
+            text-decoration: none
+
+.concert-list
+    padding-left: 19px
+
+@media screen and (max-width: 500px)
+    main
+        padding: 20px
+
+    .menu
+        &-holder
+            flex-wrap: wrap
+        &-item
+            width: 100%
+            text-align: center

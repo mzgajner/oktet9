@@ -19,6 +19,11 @@ activate :livereload
 
 activate :directory_indexes
 
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 9']
+  config.cascade  = false
+end
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
@@ -50,9 +55,4 @@ configure :build do
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
-
-  activate :autoprefixer do |config|
-    config.browsers = ['last 2 versions', 'Explorer >= 9']
-    config.cascade  = false
-  end
 end
